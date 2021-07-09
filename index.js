@@ -1,4 +1,4 @@
-const request = require('request-promise');
+const request = require('request-promise').defaults({jar: true});
 const fs = require("fs");
 const {username, password} = require('./creds');
 
